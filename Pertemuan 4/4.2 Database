@@ -1,0 +1,13 @@
+
+# Pengenalan Database
+
+![](https://dist.neo4j.com/wp-content/uploads/20160306141805/rdbms-graphs-sql-vs-cypher-query-language.png?_ga=2.225672536.37391353.1666372589-1678349599.1666372589)
+
+Database atau basis data merupakan kumpulan data yang dikelola sehingga dapat digunakan untuk menyimpan data. Salah satu jenis database adalah relational database. Database ini berupa tabel dan colum yang saling berhubungan. Postgres yang kita install sebelumnya merupakan salah satu contoh dari relational database.
+
+## SQL
+Untuk dapat menggunakan relational database digunakan standart bahasa yang disebut sql. Di dalam sql terdapat berbagai perintah untuk menggunakan relational database. []
+
+## Sequelize
+
+Untuk mempermudah kita dalam menggunakan database, kita akan menggunakan library sequelize. Sequalize merupakan ORM, yaitu 

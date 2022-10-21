@@ -1,5 +1,6 @@
 const { DataTypes } = require("sequelize");
 const sequelize = require("../index");
+const bcrypt = require('bcrypt');
 
 const User = sequelize.define('user', {
   email: {
@@ -14,8 +15,13 @@ const User = sequelize.define('user', {
   password: {
     type: DataTypes.STRING,
     allowNull: false,
-    validate: {
-      isAlphanumeric: true,
+    set(value) {
+      const salt = bcrypt.genSaltSync(10);
+      const hased = bcrypt.hashSync(value, salt);
+      console.log(hased);
+      this.setDataValue('password', hased);
+    },
+    validate: { 
       notNull: true,
     }
   }

@@ -10,4 +10,6 @@ Untuk dapat menggunakan relational database digunakan standart bahasa yang diseb
 
 ## Sequelize
 
-Untuk mempermudah kita dalam menggunakan database, kita akan menggunakan library sequelize. Sequalize merupakan ORM, yaitu 
+Untuk mempermudah kita dalam menggunakan database, kita akan menggunakan library sequelize. Dengan menggunakan sequelize kita tidak perlu menuliskan perintah sql untuk memanipulasi data pada database. Kita cukup menggunakan perintah yang ada pada perintah sequelize yang ditulis dengan bahasa javasript/typescript.
+
+Untuk memulai menggunakan sequelize dapat membaca tutorial di [sini](https://sequelize.org/docs/v6/getting-started/)
